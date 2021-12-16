@@ -1,0 +1,17 @@
+doctype html 
+html
+    head 
+        title USER
+
+    body
+        h1 Users
+
+        a(href="/users/create") Create list
+
+        form(action="/users/search", method="GET")
+            input.form-control.me-2(type='search', placeholder='Search ID Position', aria-label='Search', name='q', value=input) 
+            button.btn.btn-outline-primary Search 
+
+        ul 
+            each user in users 
+                li= user.name

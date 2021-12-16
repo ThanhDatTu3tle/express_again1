@@ -1,0 +1,15 @@
+doctype html 
+html
+    head 
+        title CREATE USER
+
+    body
+        h1 Create users
+
+        
+
+        form(action="/users/create", method="POST")
+            label Name
+            input.form-control.me-2(type='text', placeholder='Create user', aria-label='Search', name='name') 
+
+            button.btn.btn-outline-primary Create 
